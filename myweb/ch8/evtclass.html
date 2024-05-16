@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <input type = 'button' id = 'btnclk' value = '버튼'>
+        <div id += 'result'></div>
+        <script>
+            class Mouse {
+                handleEvent(event){
+                    switch(envent.type){
+                        case'mousedown':
+                        result.innerHTML ='마우스 버튼 누름';
+                        break;
+                        case'mouseup':
+                        result.innerHTML ='마우스 버튼 옿음';
+                        break;
+                    }
+                }
+            }
+            let mouse=new Mouse();
+            btnclk.addEventListenner('mousedown', mouse);
+            btnclk.addEventListenner('mouseup', mouse);
+        </script>
+    </head>
+</html>
